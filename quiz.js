@@ -1,7 +1,7 @@
 function checkAnswer() {
     let correctAnswer = '4';
-    let checkedradiobutton = document.querySelector('input[name="quiz"]:checked');
-    const userAnswer = checkedradiobutton.value;
+    selected = document.querySelector("input[name='quiz']:checked");
+    const userAnswer = selected.value;
     if(userAnswer === correctAnswer){
         feedbackElement.textContent = "Correct! Well done."
     }else{
